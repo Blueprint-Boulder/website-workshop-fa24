@@ -1,0 +1,12 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #1c87c9;
+  cursor: pointer;
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+  justify-content: center;
+}
