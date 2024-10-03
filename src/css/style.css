@@ -8,13 +8,20 @@ body {
 
 #title {
   display: inline-block;
-  font-size: 8vw;
+  font-size: 6vw;
   color: white;
   margin-bottom: 40px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
+}
+
+#demo-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 0;
 }
 
 .buttons {
@@ -28,7 +35,7 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 6vw;
+  font-size: 5vw;
   width: auto;
   height: 100%;
   margin: 5px;
@@ -68,10 +75,44 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 9vw;
 }
 
 section h2 {
   text-align: center;
+}
+
+.workshop-info-box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000000;
+  border: 4px solid #ccc;
+  padding: 1vh;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-info-box h2 {
+  font-size: 3vw;
+  margin: 0;
+}
+
+.workshop-info-box ul {
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
+}
+
+ul#ul-container {
+  display: inline-block;
+  text-align: left;
+}
+
+.workshop-info-box ul li {
+  font-size: 2vw;
+  margin: 0;
 }
