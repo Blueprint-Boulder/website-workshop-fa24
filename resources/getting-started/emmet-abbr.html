@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet Abbreviations</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Emmet Abbreviations</h1>
+      <nav>
+        <a href="index.html">← Back to "Getting Started"</a>
+      </nav>
+    </header>
+    <section>
+      <h2>Quick HTML & CSS Generation with Emmet</h2>
+      <ol>
+        <li>
+          <strong>Basic HTML Abbreviations:</strong>
+          <ul>
+            <li><code>html:5</code> → Generates a basic HTML5 boilerplate.</li>
+            <li>
+              <code>ul>li*5</code> → Creates an unordered list with 5 list
+              items.
+            </li>
+            <li>
+              <code>div.container>header+main+footer</code> → Creates a
+              <code>div</code> with nested <code>header</code>,
+              <code>main</code>, and <code>footer</code> elements.
+            </li>
+            <li>
+              <code>a[href="http://example.com"]</code> → Creates an anchor
+              link.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>CSS Abbreviations:</strong>
+          <ul>
+            <li><code>m10</code> → Translates to <code>margin: 10px;</code></li>
+            <li>
+              <code>p20-10</code> → Translates to
+              <code>padding: 20px 10px;</code>
+            </li>
+            <li><code>w100</code> → Translates to <code>width: 100%;</code></li>
+            <li>
+              <code>bgc#f00</code> → Translates to
+              <code>background-color: #ff0000;</code>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Nesting with Emmet:</strong>
+          <ul>
+            <li>
+              <code>nav>ul>li*3>a</code> → Creates a navigation menu with 3
+              links.
+            </li>
+            <li>
+              <code>form>label+input[type="text"]*2+button</code> → Creates a
+              form with two text inputs and a button.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Advanced Techniques:</strong>
+          <ul>
+            <li>
+              <strong>Climbing Up with <code>^</code>:</strong> For example:
+              <code>div>p>span^a</code> creates a <code>div</code> containing a
+              <code>p</code> with a <code>span</code>, and then an
+              <code>a</code> tag at the same level as the <code>p</code>.
+            </li>
+            <li>
+              <strong
+                >Sibling Combinator <code>+</code> and Multiplication
+                <code>*</code>:</strong
+              >
+              <code>div>p*3+ul>li*2</code> generates three <code>p</code> tags
+              and a <code>ul</code> with two <code>li</code> tags.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Emmet Customization:</strong> Customize Emmet shortcuts
+          through <code>Preferences > User Snippets</code>.
+        </li>
+      </ol>
+    </section>
+  </body>
+</html>
