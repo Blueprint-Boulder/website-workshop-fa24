@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model in CSS</title>
+    <style>
+      /* Styling examples for the box model */
+      .box {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        padding: 15px;
+        border: 5px solid #333;
+        background-color: #f4f4f4;
+      }
+      .box1 {
+        border: 10px solid blue;
+      }
+      .box2 {
+        padding: 30px;
+      }
+      .box3 {
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The CSS Box Model</h1>
+    <p>
+      Every HTML element can be thought of as a box. The CSS box model defines
+      the size and properties of these boxes. The box model is made up of four
+      parts: margin, border, padding, and the content area.
+    </p>
+    <h2>Box Model Components</h2>
+    <ul>
+      <li><strong>Margin</strong>: Space outside the border of the element.</li>
+      <li>
+        <strong>Border</strong>: Surrounds the padding and content, creating a
+        visible boundary.
+      </li>
+      <li>
+        <strong>Padding</strong>: Space between the content and the border.
+      </li>
+      <li>
+        <strong>Content</strong>: The actual content of the box, such as text or
+        images.
+      </li>
+    </ul>
+
+    <h2>Example: Understanding the Box Model</h2>
+    <div class="box">
+      This is a box with:
+      <ul>
+        <li>150px width</li>
+        <li>150px height</li>
+        <li>15px padding</li>
+        <li>5px border</li>
+        <li>20px margin</li>
+      </ul>
+    </div>
+
+    <h2>Comparing Different Box Properties</h2>
+    <div class="box box1">Larger Border (10px solid blue)</div>
+    <div class="box box2">Increased Padding (30px)</div>
+    <div class="box box3">Increased Margin (40px)</div>
+
+    <p>
+      Notice how changing the margin, padding, or border size affects the total
+      size and spacing of each box. Use these properties to control the layout
+      and spacing of your elements.
+    </p>
+
+    <a href="style-tags.html">Next: Style Tags vs External Stylesheets</a>
+    <a href="index.html">Back to Table of Contents</a>
+  </body>
+</html>

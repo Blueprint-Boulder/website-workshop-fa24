@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div vs Span and Introduction to CSS</title>
+    <style>
+      /* CSS Example */
+      .highlight {
+        background-color: yellow;
+      }
+      .container {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Div vs. Span: Understanding the Basics</h1>
+    <p>
+      The <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements are
+      often used to group content together, but they have different purposes.
+    </p>
+    <h2>The &lt;div&gt; Element</h2>
+    <p>
+      The <code>&lt;div&gt;</code> tag is a block-level element, which means it
+      takes up the entire width of its container and starts on a new line. It is
+      typically used to group larger chunks of content and create page layouts.
+    </p>
+    <div class="container">
+      <h3>This content is inside a &lt;div&gt; element</h3>
+      <p>
+        By using <code>&lt;div&gt;</code> elements, you can define different
+        sections of your page. For example, this content is inside a container
+        that has a border around it, making it easier to distinguish visually.
+      </p>
+    </div>
+    <h2>The &lt;span&gt; Element</h2>
+    <p>
+      The <code>&lt;span&gt;</code> tag is an inline element, which means it
+      only takes up as much width as necessary and does not force content onto a
+      new line. It is commonly used to style small parts of text or group inline
+      elements.
+    </p>
+    <p>
+      For example, you can <span class="highlight">highlight text</span> using
+      the <code>&lt;span&gt;</code> tag, as shown here.
+    </p>
+    <h2>Introducing CSS</h2>
+    <p>
+      CSS (Cascading Style Sheets) is used to control the presentation and
+      layout of HTML elements. You can apply styles directly within the HTML
+      file, like in the example above, or link to an external CSS file.
+    </p>
+    <p>
+      Using CSS, you can change the appearance of your
+      <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements by setting
+      properties like <code>background-color</code>, <code>font-size</code>,
+      <code>margin</code>, and more.
+    </p>
+    <h3>Example CSS Styles</h3>
+    <pre><code>
+/* Highlight text */
+.highlight {
+  background-color: yellow;
+}
+
+/* Container with a border */
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+    </code></pre>
+    <a href="../css-styling/index.html">Next: CSS Styling: Table of Contents</a>
+    <a href="id-anchors.html">Previous: ID and Anchors</a>
+  </body>
+</html>
