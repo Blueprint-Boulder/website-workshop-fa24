@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloning the Repository</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-top">
+      <a href="index.html" class="nav-button">Back to Index</a>
+    </div>
+    <header>
+      <h1>Cloning the Repository</h1>
+    </header>
+    <main>
+      <section>
+        <p>
+          Now that you have Git and GitHub set up, it's time to clone the
+          workshop repository to your local machine. This is where you’ll get
+          all the files and folders you need to complete the exercises.
+        </p>
+        <h2>Command</h2>
+        <p>Run the following commands in your terminal:</p>
+        <pre><span class="git">git</span> <span class="git-command">clone</span> <span class="flag">--sparse</span> <code>&lt;repo_url&gt;</code></pre>
+        <p>
+          Once the repository is cloned, navigate into the repository folder:
+        </p>
+        <pre><span class="standard-command">cd</span> <code>&lt;repo_folder&gt;</code></pre>
+        <p>Finally, check out only the specific folder you need:</p>
+        <pre><span class="git">git</span> <span class="git-command">sparse-checkout</span> <span class="git-command">set</span> hosting-your-site/clone-this</pre>
+        <h2>Explanation</h2>
+        <ul>
+          <li>
+            First command:
+            <pre><span class="git">git</span> <span class="git-command">clone</span> <span class="flag">--sparse</span> <code>&lt;repo_url&gt;</code></pre>
+            This clones the repository but skips downloading file contents until
+            you specify what you want. Replace
+            <code>&lt;repo_url&gt;</code> with the repository URL.
+          </li>
+          <li>
+            Second command:
+            <pre><span class="standard-command">cd</span> <code>&lt;repo_folder&gt;</code></pre>
+            This navigates into the folder that was created during the clone
+            process.
+          </li>
+          <li>
+            Third command:
+            <pre><span class="git">git</span> <span class="git-command">sparse-checkout</span> <span class="git-command">set</span> hosting-your-site/clone-this</pre>
+            This downloads only the <code>clone-this</code> folder inside the
+            <code>hosting-your-site</code> directory, saving time and space.
+          </li>
+        </ul>
+      </section>
+      <div class="nav-bottom">
+        <a href="obtaining-ssh-key.html" class="nav-button nav-prev"
+          >Previous: Setting Up Your SSH Key</a
+        >
+        <a href="moving-files.html" class="nav-button nav-next"
+          >Next: Moving Your Files to the Repository</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

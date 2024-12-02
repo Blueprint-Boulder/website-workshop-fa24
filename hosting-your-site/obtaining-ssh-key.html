@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting Up Your SSH Key</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-top">
+      <a href="index.html" class="nav-button">Back to Index</a>
+    </div>
+    <header>
+      <h1>Setting Up Your SSH Key</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Why Do You Need an SSH Key?</h2>
+        <p>
+          You might be wondering: Why do I even need an SSH Key? Well, an SSH
+          key is like a VIP pass for your computer to access GitHub securely,
+          without needing to type your password every time you use Git. It makes
+          life easier and keeps your account safe.
+        </p>
+        <p>Here's how it works:</p>
+        <ul>
+          <li>
+            Your computer generates a pair of cryptographic keys: one public and
+            one private.
+          </li>
+          <li>
+            The public key is like a lock you share with GitHub, and the private
+            key is the key that stays on your computer.
+          </li>
+          <li>
+            When you try to access GitHub, your computer "unlocks" the
+            connection using your private key. Simple and secure!
+          </li>
+        </ul>
+        <p>
+          P.S: This means that you'll have to generate an SSH key for every
+          device you plan on using Github with, or at least all the ones where
+          you're going to work with a repo.
+        </p>
+      </section>
+      <section>
+        <h2>How to Generate and Add Your SSH Key</h2>
+        <ol>
+          <li>
+            Open your terminal and enter the following command to generate your
+            key pair:
+            <pre><span class="git-command">ssh-keygen</span> <span class="flag">-t</span> ed25519 <span class="flag">-C</span> "your_email@example.com"</pre>
+            <p>
+              Replace
+              <code>your_email@example.com</code> with the email you used for
+              GitHub.
+            </p>
+          </li>
+          <li>
+            When prompted to "Enter a file in which to save the key," press
+            <code>Enter</code> to accept the default file location.
+          </li>
+          <li>
+            When prompted for a passphrase, either enter one (for extra
+            security) or leave it blank and press
+            <code>Enter</code>.
+          </li>
+          <li>
+            Now, copy your public key to your clipboard:
+            <pre><span class="standard-command">cat</span> ~/.ssh/id_ed25519.pub</pre>
+            <p>
+              Highlight the output and copy it (you'll need it for the next
+              step).
+            </p>
+          </li>
+          <li>
+            Go back to GitHub, click on your profile picture in the top-right
+            corner, and navigate to <strong>Settings</strong>.
+          </li>
+          <li>
+            Under the "Access" section in the sidebar, select
+            <strong>SSH and GPG keys</strong>, then click
+            <strong>New SSH key</strong>.
+          </li>
+          <li>
+            Paste your public key into the text box, give it a recognizable
+            title (e.g., "My Laptop" or "Macbook Pro [Name]"), and click
+            <strong>Add SSH key</strong>.
+          </li>
+          <li>
+            To verify everything's working, go back to your terminal and run:
+            <pre><span class="standard-command">ssh</span> <span class="flag">-T</span> git@github.com</pre>
+            <p>
+              If everything's set up correctly, you'll see a message like, "Hi
+              [username]! You've successfully authenticated."
+            </p>
+          </li>
+        </ol>
+      </section>
+      <div class="nav-bottom">
+        <a href="creating-github-account.html" class="nav-button nav-prev"
+          >Previous: Creating a GitHub Account</a
+        >
+        <a href="cloning-repo.html" class="nav-button nav-next"
+          >Next: Cloning the Repository</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

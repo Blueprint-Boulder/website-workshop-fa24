@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pushing and Hosting Your Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-top">
+      <a href="index.html" class="nav-button">Back to Index</a>
+    </div>
+    <header>
+      <h1>Pushing and Hosting Your Website</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Challenge: Push Your Files with Clarity</h2>
+        <p>
+          Now that you've moved your files to the repository, it's time to push
+          them to GitHub. But wait—we're not just going to dump everything in
+          one go! This challenge is all about organizing your commits to make
+          them clearer.
+        </p>
+        <p>
+          Imagine you're working on a project with a team. It's important for
+          everyone to understand exactly what changes you've made. By splitting
+          your commits into logical groups, like HTML files and CSS files, your
+          work becomes much easier to follow.
+        </p>
+        <h3>Your Mission</h3>
+        <p>Use the terminal commands you've learned to:</p>
+        <ol>
+          <li>
+            Create a commit that includes only your HTML files. (Hint: Use the
+            wildcard operator to target files ending in <code>.html</code>.)
+          </li>
+          <li>Create a second commit that includes only your CSS files.</li>
+          <li>Once your commits are ready, push everything to GitHub!</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Commands to Help You</h2>
+        <p>
+          Here's the first step and the final push command to help you get
+          started:
+        </p>
+        <pre><span class="git">git</span> <span class="git-command">remote</span> <span class="git-command">add</span> origin <code>&lt;repo_url&gt;</code></pre>
+        <p>Adds the remote repository link to your local repository.</p>
+        <pre><span class="git">git</span> <span class="git-command">push</span> -u origin main</pre>
+        <p>
+          Pushes all your committed changes to the <code>main</code> branch on
+          GitHub.
+        </p>
+        <p>
+          <strong>Hint:</strong> By using wildcard operators, we can target any
+          type of file. Including folders. Consider <code>**/*.js</code>: this
+          would target any js files, even if they're inside another folder.
+        </p>
+      </section>
+      <section>
+        <h2>Part 3: Hosting with GitHub Pages</h2>
+        <p>
+          Once your files are pushed to GitHub, make your website live by
+          enabling GitHub Pages:
+        </p>
+        <ol>
+          <li>
+            Go to your repository on GitHub and click <strong>Settings</strong>.
+          </li>
+          <li>
+            Scroll down to the <strong>Pages</strong> section in the sidebar.
+          </li>
+          <li>
+            Under <strong>Branch</strong>, select <code>main</code> and click
+            <strong>Save</strong>.
+          </li>
+          <li>
+            After a few moments, GitHub will provide you with a link to your
+            live website. Test the link to ensure it's working!
+          </li>
+        </ol>
+        <p>
+          Once your website is live, take a moment to admire your work—you've
+          officially hosted your first website using GitHub Pages!
+        </p>
+      </section>
+      <div class="nav-bottom">
+        <a href="moving-files.html" class="nav-button nav-prev"
+          >Previous: Moving Your Files</a
+        >
+        <a href="index.html" class="nav-button nav-next"
+          >Finish: Back to Index</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

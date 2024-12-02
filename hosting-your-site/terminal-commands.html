@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Dreaded Terminal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-top">
+      <a href="index.html" class="nav-button">Back to Index</a>
+    </div>
+    <header>
+      <h1>The Dreaded Terminal: Why It's Not So Bad</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Terminal Trauma</h2>
+        <p>
+          Look, the terminal can feel a little... intimidating. Everything's
+          black and white, no buttons to click, no icons to drag. And things
+          have gotten pretty button-y and drag-y these days. Most of the time,
+          you can do everything with two or three clicks. It's awesome.
+        </p>
+        <p>
+          However, there are some things—like what we're doing today—that are
+          much easier (and faster!) in the terminal. Once you get the hang of
+          it, you'll find it's not as scary as it seems. We promise.
+        </p>
+      </section>
+      <section>
+        <h2>Common Commands</h2>
+        <p>
+          Here's a quick rundown of the commands we'll be using throughout the
+          workshop. We've grouped them by category for easy reference!
+        </p>
+
+        <h3>Git Commands</h3>
+        <ul>
+          <li>
+            <code
+              ><span class="git">git</span>
+              <span class="git-command">clone</span></code
+            >: Create a copy of a remote repository on your local computer.
+          </li>
+          <li>
+            <code
+              ><span class="git">git</span>
+              <span class="git-command">add</span></code
+            >: Stage changes to be committed.
+          </li>
+          <li>
+            <code
+              ><span class="git">git</span>
+              <span class="git-command">commit</span></code
+            >: Save staged changes to the repository's history.
+          </li>
+          <li>
+            <code
+              ><span class="git">git</span>
+              <span class="git-command">push</span></code
+            >: Send your local changes to the remote repository.
+          </li>
+          <li>
+            <code
+              ><span class="git"> git </span
+              ><span class="git-command">sparse-checkout</span></code
+            >: Allows you to download only specific parts of a repository after
+            a sparse clone.
+          </li>
+        </ul>
+
+        <h3>Navigation Commands</h3>
+        <ul>
+          <li>
+            <code class="standard-command">pwd</code>: Print the current working
+            directory.
+          </li>
+          <li>
+            <code class="standard-command">cd</code>: Change the current
+            directory.
+          </li>
+          <li>
+            <code class="standard-command">ls</code>: List the files and
+            directories in the current folder.
+          </li>
+          <li>
+            <code class="standard-command">ls <span class="flag">-l</span></code
+            >: List files with details.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Commands for Files and Folders</h2>
+        <ul>
+          <li>
+            <code class="standard-command">touch</code>: Create a new, empty
+            file.
+            <pre><span class="standard-command">touch</span> index.html</pre>
+          </li>
+          <li>
+            <code class="standard-command">mkdir</code>: Create a new folder
+            (directory).
+            <pre><span class="standard-command">mkdir</span> myfolder</pre>
+          </li>
+          <li>
+            <code class="standard-command">rm</code>: Remove a file.
+            <pre><span class="standard-command">rm</span> style.css</pre>
+          </li>
+          <li>
+            <code class="standard-command">rm <span class="flag">-r</span></code
+            >: Remove a folder and its contents recursively.
+            <pre><span class="standard-command">rm</span> <span class="flag">-r</span> myfolder</pre>
+          </li>
+          <li>
+            <code class="standard-command">cat</code>: Reads and outputs the
+            contents of a file. In this workshop, we use it to display the
+            contents of your public key file so you can copy it and add it to
+            GitHub.
+            <pre><span class="standard-command">cat</span> ~/.ssh/id_ed25519.pub</pre>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Flags</h3>
+        <p>
+          Flags are like modifiers for terminal commands. They add extra
+          functionality or tweak how a command behaves. Think of them as the
+          sprinkles on your ice cream—totally optional, but they make everything
+          better.
+        </p>
+        <p>
+          Flags usually come after the main command and are preceded by a dash
+          (`-`). Some flags have a single dash (e.g., `-r`), while others have
+          double dashes (e.g., `--help`). Here's an example:
+        </p>
+        <pre><span class="standard-command">ls</span> <span class="flag">-l</span></pre>
+        <p>
+          This command lists files in long format, showing extra details like
+          permissions and file sizes. Below are the other flags we'll use
+        </p>
+        <ul>
+          <li>
+            <code><span class="flag">--sparse</span></code
+            >: Clone only specific parts of a repository. This is only a
+            <span class="flag">flag</span> for
+            <code><span class="git">git</span></code> commands.
+          </li>
+          <li>
+            <code><span class="flag">-r</span></code
+            >: Recursive—used to perform actions on directories and their
+            contents.
+          </li>
+          <li>
+            <code><span class="flag">-t</span></code
+            >: This flag specifies the type of key to create. In this workshop,
+            we use <code>ed25519</code>, a modern and secure key type.
+          </li>
+          <li>
+            <code><span class="flag">-C</span></code
+            >: This flag allows you to add a comment to your SSH key, often used
+            to identify it. In this case, we use your GitHub email address as
+            the comment.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Understanding <code class="git-command">ssh-keygen</code></h2>
+        <p>
+          The <code class="git-command">ssh-keygen</code> command generates a
+          new SSH key pair. This command creates both a public key (which you
+          share with GitHub) and a private key (which stays secure on your
+          computer). You'll encounter this command when setting up SSH for
+          secure authentication.
+        </p>
+      </section>
+    </main>
+    <div class="nav-bottom">
+      <a href="git-vs-github.html" class="nav-button nav-prev"
+        >Previous: Git vs. GitHub</a
+      >
+      <a href="terminal-challenge.html" class="nav-button nav-next"
+        >Next: A Quick Terminal Challenge</a
+      >
+    </div>
+  </body>
+</html>
