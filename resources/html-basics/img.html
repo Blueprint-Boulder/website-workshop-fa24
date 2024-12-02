@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images in HTML</title>
+  </head>
+  <body>
+    <h1>Images in HTML</h1>
+    <p>
+      The <code>&lt;img&gt;</code> tag is used to display images on a webpage.
+      It is a self-closing tag that requires a <code>src</code> attribute, which
+      specifies the path to the image file, and an <code>alt</code> attribute,
+      which provides an alternative text description of the image.
+    </p>
+
+    <h2>Basic Image Example</h2>
+    <p>Here's a basic example of using the <code>&lt;img&gt;</code> tag:</p>
+    <pre><code>&lt;img src="platypus.jpg" alt="A platypus swimming in water" /&gt;</code></pre>
+    <p>
+      This code will display the image located at <code>platypus.jpg</code> with
+      a description that reads "A platypus swimming in water." If the image
+      cannot be displayed, the alt text will appear in its place, making it
+      important for accessibility.
+    </p>
+
+    <h2>Using the &lt;figure&gt; and &lt;figcaption&gt; Elements</h2>
+    <p>
+      The <code>&lt;figure&gt;</code> element is used to group images with their
+      captions, making them easier to associate. You can include multiple images
+      in a figure or use it to wrap other types of media. The
+      <code>&lt;figcaption&gt;</code> element provides a caption for the content
+      inside <code>&lt;figure&gt;</code>.
+    </p>
+
+    <figure>
+      <img src="platypus.jpg" alt="A platypus swimming in water" />
+      <figcaption>
+        Figure 1: A platypus swimming in its natural habitat.
+      </figcaption>
+    </figure>
+
+    <p>
+      As well as linking from your own computer, you can also use absolute
+      links.
+    </p>
+
+    <figure>
+      <img
+        src="https://static01.nyt.com/images/2008/05/07/science/platypus.span.600.jpg?quality=75&auto=webp&disable=upscale"
+        alt="A platypus diving"
+      />
+      <figcaption>
+        Source:
+        <a href="https://www.nytimes.com/2008/05/08/science/08platypus.html"
+          >The New York Times</a
+        >
+      </figcaption>
+    </figure>
+
+    <h2>Image Paths</h2>
+    <p>
+      When specifying the <code>src</code> attribute in an
+      <code>&lt;img&gt;</code> tag, you can use either a relative path or an
+      absolute path:
+    </p>
+    <ul>
+      <li>
+        <strong>Relative Path</strong>: <code>src="images/platypus.jpg"</code> —
+        Points to an image in a folder called "images" relative to the current
+        file.
+      </li>
+      <li>
+        <strong>Absolute Path</strong>:
+        <code>src="https://example.com/platypus.jpg"</code> — Points to an image
+        located at an external URL.
+      </li>
+    </ul>
+
+    <h2>Image Attributes</h2>
+    <p>
+      The <code>width</code> and <code>height</code> attributes allow you to set
+      the dimensions of an image in pixels, but it's often better to control the
+      size with CSS to keep your code clean. Avoid using these attributes if the
+      image is meant to be responsive.
+    </p>
+    <p>
+      You can also use CSS properties like <code>max-width</code> and
+      <code>height</code> to ensure your images resize correctly based on screen
+      size.
+    </p>
+
+    <h2>Responsive Images</h2>
+    <p>To make your images responsive, use the following CSS properties:</p>
+    <pre><code>img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+    <p>
+      This will ensure that the image scales down to fit within its container
+      without exceeding its original dimensions.
+    </p>
+
+    <h2>Accessibility with Alt Text</h2>
+    <p>
+      Always include an <code>alt</code> attribute for every image. The text
+      should describe the content and function of the image. If an image is
+      purely decorative, you can use an empty alt attribute like this:
+      <code>alt=""</code>. This tells screen readers to skip the image,
+      improving the accessibility of your site.
+    </p>
+
+    <a href="div-span.html">Next: Div vs. Span</a>
+    <a href="id-anchors.html">Previous: ID and Anchors</a>
+  </body>
+</html>

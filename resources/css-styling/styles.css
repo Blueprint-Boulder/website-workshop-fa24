@@ -1,0 +1,123 @@
+/* External Stylesheet: styles.css */
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style for examples referenced in the style-tags.html page */
+.external-style {
+  color: green;
+  font-size: 20px;
+  border: 2px solid orange;
+  padding: 10px;
+}
+
+/* Box Model Styles */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  padding: 15px;
+  border: 5px solid #333;
+  background-color: #f4f4f4;
+}
+
+.box1 {
+  border: 10px solid blue;
+}
+
+.box2 {
+  padding: 30px;
+}
+
+.box3 {
+  margin: 40px;
+}
+
+/* Colors Example */
+.red-text {
+  color: red;
+}
+
+.blue-bg {
+  background-color: blue;
+  color: white;
+}
+
+.transparent-bg {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Fonts Example */
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sans-serif {
+  font-family: Arial, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Image Styling Example */
+.img-border img {
+  border: 5px solid #333;
+  width: 200px;
+}
+
+.img-rounded img {
+  border-radius: 15px;
+  width: 200px;
+}
+
+.img-circle img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.img-shadow img {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+/* Styling for figure and figcaption */
+figure {
+  text-align: center;
+  margin: 20px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}

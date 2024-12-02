@@ -1,0 +1,24 @@
+.superbig-red {
+  font-size: 40px;
+  color: red;
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+li {
+  font-weight: bold;
+}
+
+.list-style {
+  font-family: "Courier New";
+}
+
+.list-style ul {
+  color: aqua;
+  padding-top: 10px;
+  padding-bottom: 2em;
+}
+
+.list-style ol {
+  background-color: blue;
+  font-weight: lighter;
+}
