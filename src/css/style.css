@@ -115,4 +115,13 @@ ul#ul-container {
 .workshop-info-box ul li {
   font-size: 2vw;
   margin: 0;
+  list-style-type: none;
+}
+
+.workshop-info-box ul li a {
+  text-decoration: none;
+}
+
+.workshop-info-box ul li a:hover {
+  text-decoration: underline;
 }
